@@ -10,7 +10,9 @@ const employeeRoutes = require("./routes/employeeRoutes");
 const employeeAttendanceRoutes = require("./routes/employeeAttendanceRoutes");
 const employeeSalarySettlementRoutes = require("./routes/employeeSalarySettlementRoutes");
 const employeeSalaryRoutes = require("./routes/employeeSalaryRoutes");
-const salaryLedgerRoutes = require("./routes/salaryLedgerRoutes")
+const salaryLedgerRoutes = require("./routes/salaryLedgerRoutes");
+const menuCategoryRoutes = require("./routes/menuCategoryRoutes");
+const menuItemsRoutes = require("./routes/menuItemsRoutes");
 
 dotenv.config();
 
@@ -28,6 +30,8 @@ app.use("/employeeAttendance", employeeAttendanceRoutes);
 app.use("/employeeSalarySettlement", employeeSalarySettlementRoutes);
 app.use("/employeeSalary", employeeSalaryRoutes);
 app.use("/salaryLedger", salaryLedgerRoutes);
+app.use("/menuCategories", menuCategoryRoutes);
+app.use("/menuItems", menuItemsRoutes);
 
 app.get("/", (req, res) => {
   res.json({
