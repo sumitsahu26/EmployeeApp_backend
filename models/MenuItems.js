@@ -16,14 +16,15 @@ const menuItemsSchema = new mongoose.Schema(
     },
     price: {
       type: String,
-      required: true,
+      default: null
     },
     half: {
       type: String,
+      default: null
     },
     full: {
       type: String,
-      required: true,
+      default: null
     },
     status: {
       type: String,

@@ -74,7 +74,7 @@ const getMenuItemById = async (req, res) => {
 
   } catch (error) {
 
-    console.error(
+    console.log(
       'Get menu item error:',
       error.message
     );
@@ -117,7 +117,6 @@ const createMenuItem = async (req, res) => {
 
 const updateMenuItem = async (req, res) => {
   try {
-
     const item =
       await MenuItem.findByIdAndUpdate(
         req.params.id,

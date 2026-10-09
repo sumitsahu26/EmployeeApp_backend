@@ -59,7 +59,6 @@ const getMenuCategoryById = async (req, res) => {
 
 const createMenuCategory = async (req, res) => {
   try {
-
     const category = await MenuCategory.create(
       req.body
     );
